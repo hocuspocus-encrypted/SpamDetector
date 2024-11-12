@@ -1,0 +1,101 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+<!--  Header of the webpage-->
+  <meta charset="utf-8">
+  <title>Spam Detector</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+<!--  Top panel-->
+  <div style="background-color: #333; color: #fff;text-align: center;padding-left: 300px">
+    <div class="container"><p class="typed">Spam Analysis Dashboard</p></div>
+  </div>
+<!--Sidebar panel for navigation-->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+    <div class="w3-container">
+      <h3 class="w3-padding-64"><b>Spam Detector Dashboard</b></h3>
+    </div>
+    <div class="w3-bar-block">
+      <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">> Dashboard</a>
+      <a href="http://localhost:63342/w24-csci2020u-assignment01-shiv-saksham-vibhavan-sanhith/SpamDetectorClient/about.html?_ijt=u2t55cnknsak7f8c4j8dq4a4fe" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a><br>
+    </div>
+  </nav>
+
+
+  <div class="w3-main" style="margin-left:340px;margin-right:40px">
+<!--    Table-->
+    <div style="height: 600px; overflow: auto;padding-top: 100px" class="w3-container">
+      <table id="data-table" border="1" class="w3-table w3-bordered w3-striped w3-card">
+        <thead>
+        <tr>
+          <th>File</th>
+          <th>Spam Probability(%)</th>
+          <th>Class</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+
+  <div class="w3-main" style="margin-left:300px;margin-right:300px">
+<!--Stats for accuracy and precision-->
+    <div class="w3-container" style="margin-top: 75px; margin-left: 0px">
+      <div class = "w3-row-padding w3-grayscale">
+            <div style="flex: 1;">
+              <div style="font-size: 30px" id="accuracy">
+                <h2>Accuracy : </h2>
+              </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+              <div style="font-size: 30px;padding-bottom: 75px" id="precision">
+                <h2>Precision : </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+
+  <footer>
+    <div style="padding-left: 300px">
+      <p>Copyright © CSCI 2020U - Winter 2024</p>
+    </div>
+  </footer>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'http://localhost:63342', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
